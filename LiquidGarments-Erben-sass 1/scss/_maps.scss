@@ -1,0 +1,17 @@
+$colores:(
+'uno': #000000, 
+'dos': #0600FF ,
+'tres': #5E5E5E ,
+)	;
+
+.bg-blue{
+	background-color: map-get($map:$colores, $key:'dos')
+}
+
+.bg-black{
+	background-color:map-get($map:$colores, $key:'uno')
+}
+
+.bg-grey{
+	background-color:map-get($map:$colores, $key:'tres')
+}
