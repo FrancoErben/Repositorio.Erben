@@ -1,0 +1,86 @@
+body{
+	background-image: url(../img/fondo.png);
+	overflow-x: hidden;
+	
+}
+
+
+.principal__hipervinculo--centrado{
+	display:block ;
+	width: 85%;
+	margin: auto;
+
+}
+.titulo--contacto{
+font-family: 'Bebas Neue', cursive;
+	font-size: 4em;
+	text-align: center;
+	
+	color: #000000;
+}
+.parrafo-contacto{
+	font-size: 2em;
+}
+
+.principal__articulo {
+	border: solid rgba(0, 23, 255, 1.0) 0.2em;
+	widows: 85%;
+	text-align: center;
+	margin: 3em;
+	background: rgba(0, 23, 255, 0.5);
+
+}
+.principal__texto--centrado{
+	font-size: 2.5em;
+	display: inline-block;
+	margin: 1em;
+	
+}
+/*grid CONTACTOS*/
+fieldset{
+	display: grid;
+}
+.texto-mediano{
+
+	font-size:1.5em ;
+}
+.texto-pequeño{
+	font-size: 1.1em;
+}
+.contenedor{
+display: grid;
+justify-content: center;
+margin: 1em;
+grid-template-columns:25% 25% 25% 25%   ;
+grid-template-rows:  auto auto auto  ;
+grid-template-areas: "titulo" 
+                     "datos tipo mensaje enviar"                     
+                     "mapa";
+                     
+}
+.titulo-contacto{
+	grid-area: titulo;
+}
+.contacto-datos{
+	grid-area: datos;
+}
+.contacto-tipo{ 
+
+	grid-area: tipo ;
+}
+.contacto-mensaje{
+	grid-area: mensaje;
+}
+.contacto-enviar{
+
+	grid-area: enviar ;
+}
+.contacto-mapa{
+	grid-area: mapa;
+}
+
+
+.transformacion-index:hover{
+	transform: skew(5deg,2deg);
+}
+
