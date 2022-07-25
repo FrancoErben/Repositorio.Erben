@@ -74,7 +74,8 @@ body {
   color: #000000; }
 
 .parrafo-contacto {
-  font-size: 2em; }
+  font-size: 2em;
+  text-align: center; }
 
 .principal__articulo {
   border: solid #0017ff 0.2em;
@@ -88,46 +89,58 @@ body {
   display: inline-block;
   margin: 1em; }
 
-/*grid CONTACTOS*/
-fieldset {
-  display: grid; }
+/*contactos*/
+.contacto {
+  display: flex; }
 
-.texto-mediano {
-  font-size: 1.5em; }
+.form-contacto {
+  text-align: center;
+  display: inline-block;
+  border: solid #0017ff 0.2em;
+  padding: 1em; }
 
-.texto-pequeño {
-  font-size: 1.1em; }
+.centrado {
+  text-align: center; }
 
-.contenedor {
-  display: grid;
-  justify-content: center;
-  margin: 1em;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "titulo" 
- "datos tipo mensaje enviar"                     
- "mapa"; }
-
-.titulo-contacto {
-  grid-area: titulo; }
-
-.contacto-datos {
-  grid-area: datos; }
-
-.contacto-tipo {
-  grid-area: tipo; }
-
-.contacto-mensaje {
-  grid-area: mensaje; }
-
-.contacto-enviar {
-  grid-area: enviar; }
+.mapa {
+  text-align: center; }
 
 .contacto-mapa {
-  grid-area: mapa; }
+  display: flex;
+  justify-content: center; }
+
+.texto-mediano {
+  font-size: 1.8em; }
+
+.texto-pequeño {
+  font-size: 1.5em; }
 
 .transformacion-index:hover {
   transform: skew(5deg, 2deg); }
+
+.nov-contenedor {
+  display: grid;
+  grid-template-areas: "novedades novedades novedades"
+ "rusty quicksilver billabong";
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  justify-content: center; }
+
+.nov {
+  grid-area: novedades;
+  margin: 2em; }
+
+.rusty {
+  grid-area: rusty;
+  text-align: center; }
+
+.quick {
+  grid-area: quicksilver;
+  text-align: center; }
+
+.billa {
+  grid-area: billabong;
+  text-align: center; }
 
 .titulo-centrado-grande {
   font-family: 'Bebas Neue', cursive;
@@ -141,7 +154,7 @@ fieldset {
   font-size: 4em;
   text-align: center;
   margin: 1em;
-  color: #0017ff; }
+  color: #000000; }
 
 .bg-blue {
   background-color: #0600FF; }
@@ -151,7 +164,8 @@ fieldset {
 
 .bg-grey {
   background-color: #5E5E5E; }
-@media screen and (min-width: 320px){
+
+@media screen and (max-width: 430px){
   .encabezado {
     display: grid;
     grid-template-rows:auto;
@@ -177,7 +191,7 @@ nav ul li a {
 }
 .titulo-centrado-grande{
   font-family: 'Bebas Neue', cursive;
-  font-size: 2em;
+  font-size: 3em;
   text-align: center;
   margin: 1.5em ;
   color: #000000;
@@ -193,7 +207,7 @@ nav ul li a {
 }
 .sub-titulo{
   font-family: 'Bebas Neue', cursive;
-  font-size: 2em;
+  font-size: 2.5em;
   text-align: center;
   margin: 0.5em;
   color: #000000;
@@ -207,12 +221,42 @@ nav ul li a {
 
 }
 .principal__texto--centrado{
-  font-size: 1.25em;
+  font-size: 2em;
   display: inline-block;
   margin: 1em;
   
 }
+.contacto {
+  display: flex; }
 
+.form-contacto {
+  text-align: center;
+  display: inline-block;
+  border: solid #0017ff 0.2em;
+  padding: 0.5em; }
+
+.centrado {
+   }
+
+.mapa {
+  ; 
+margin: auto;}
+
+.contacto-mapa {
+ 
+ }
+
+iframe{
+  width: 30em
+  
+}
+.fotos-nosotros{
+  padding: 0em;
+  width: 100%;
+ margin-top: 5em;
+ size: 10em;
+ 
+}
 .pie{
   background: #000000;
   display: flex;
@@ -266,7 +310,209 @@ nav ul li a {
 }
       }
 
+@media screen and (max-width: 480px){
+  .titulo-centrado-grande{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3em;
+  text-align: center;
+  margin: 1.5em ;
+  color: #000000;
 
+}
+.principal__hipervinculo--centrado{
+  display:flex ;
+
+  justify-content: space-evenly ;
+  width: 85%;
+  margin: auto;
+
+}
+.sub-titulo{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2em;
+  text-align: center;
+  margin: 0.5em;
+  color: #000000;
+}
+.principal__articulo {
+  border: solid rgba(0, 23, 255, 1.0) 0.2em;
+  widows: 85%;
+  text-align: center;
+  margin: 1.5em;
+  background: rgba(0, 23, 255, 0.5);
+
+}
+.principal__texto--centrado{
+  font-size: 1.25em;
+  display: inline-block;
+  margin: 1em;
+  
+}
+  .fotos-nosotros{
+  padding: 0em;
+  width: 100%;
+  height: 100%;
+ margin-top:2em;
+ margin-bottom: ;
+
+ 
+}
+.pie{
+  background: #000000;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 24em;
+
+}
+.pie__redes{
+  
+  display: flex;
+  align-items: center;
+
+  order:1 ;
+}
+.fb{
+  background: white;
+  display: inline-block;
+  width: 40px;
+}
+.pie__redsocial{
+  display: flex;
+
+  justify-content:space-evenly ;
+  margin: 0.2em;
+  width: 40px;
+  height: 40px;
+  
+}
+.pie__titulo{
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+
+  font-size:1.5em;
+
+  order:3 ;
+}
+.pie__form{
+  display: flex;
+  justify-content: space-evenly;
+  
+
+
+  order: 2 ;
+}
+.pie__label{
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  font-size: 1em;
+}
+      }
+}
+@media screen and (min-width: 390px){
+.titulo-centrado-grande{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 4em;
+  text-align: center;
+  margin: 1.2em ;
+  color: #000000;
+
+}
+.principal__hipervinculo--centrado{
+  display:flex ;
+
+  justify-content: space-evenly ;
+  width: 85%;
+  margin: auto;
+
+}
+.sub-titulo{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2em;
+  text-align: center;
+  margin: 0.5em;
+  color: #000000;
+}
+.principal__articulo {
+  border: solid rgba(0, 23, 255, 1.0) 0.2em;
+  widows: 85%;
+  text-align: center;
+  margin: 1.5em;
+  background: rgba(0, 23, 255, 0.5);
+
+}
+.principal__texto--centrado{
+  font-size: 1.25em;
+  display: inline-block;
+  margin: 1em;
+  
+}
+  .fotos-nosotros{
+  padding: 0em;
+  width: 100%;
+  height: 100%;
+ margin-top:2em;
+ margin-bottom: ;
+
+ 
+}
+.pie{
+  background: #000000;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 24em;
+
+}
+.pie__redes{
+  
+  display: flex;
+  align-items: center;
+
+  order:1 ;
+}
+.fb{
+  background: white;
+  display: inline-block;
+  width: 40px;
+}
+.pie__redsocial{
+  display: flex;
+
+  justify-content:space-evenly ;
+  margin: 0.2em;
+  width: 40px;
+  height: 40px;
+  
+}
+.pie__titulo{
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+
+  font-size:1.5em;
+
+  order:3 ;
+}
+.pie__form{
+  display: flex;
+  justify-content: space-evenly;
+  
+
+
+  order: 2 ;
+}
+.pie__label{
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  font-size: 1em;
+}
+      }
+}
+}
 @media screen and (min-width: 480px){
     .encabezado {
     display: grid;
@@ -329,12 +575,40 @@ nav ul li a {
   margin: 1em;
   
 }
+.contacto {
+  display: flex; }
 
+.form-contacto {
+  text-align: center;
+  display: inline-block;
+  border: solid #0017ff 0.2em;
+  padding: 1em; }
+
+.centrado {
+  text-align: center; }
+
+.mapa {
+  text-align: center; }
+
+.contacto-mapa {
+  display: flex;
+  justify-content: center; }
+
+  .fotos-nosotros{
+  padding: 0em;
+  width: 100%;
+  height: 100%;
+ margin-top:2em;
+ margin-bottom: ;
+
+ 
+}
 .pie{
   background: #000000;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 24em;
 
 }
 .pie__redes{
@@ -347,7 +621,7 @@ nav ul li a {
 .fb{
   background: white;
   display: inline-block;
-
+  width: 40px;
 }
 .pie__redsocial{
   display: flex;
@@ -363,7 +637,7 @@ nav ul li a {
   display: flex;
   justify-content: space-evenly;
 
-  font-size:1em;
+  font-size:1.5em;
 
   order:3 ;
 }
@@ -381,6 +655,7 @@ nav ul li a {
   color: white;
   font-size: 1em;
 }
+      }
 }
 
 @media screen and (min-width: 768px){
@@ -445,7 +720,28 @@ nav ul li a {
   margin: 1em;
   
 }
+.contacto {
+  display: flex; }
 
+.form-contacto {
+  text-align: center;
+  display: inline-block;
+  border: solid #0017ff 0.2em;
+  padding: 1em; }
+
+.centrado {
+  text-align: center; }
+
+.mapa {
+  text-align: center; }
+
+.contacto-mapa {
+  display: flex;
+  justify-content: center; }
+
+iframe{
+  width: 70em
+}
 .pie{
   background: #000000;
   display: flex;
@@ -469,9 +765,9 @@ nav ul li a {
   display: flex;
 
   justify-content:space-evenly ;
-  margin: 0.2em;
-  width: 50px;
-  height: 50px;
+  margin: 0.4em;
+  width: 60px;
+  height: 60px;
   
 }
 .pie__titulo{
@@ -479,7 +775,7 @@ nav ul li a {
   display: flex;
   justify-content: space-evenly;
 
-  font-size:1.5em;
+  font-size:1.8em;
 
   order:3 ;
 }
@@ -495,6 +791,6 @@ nav ul li a {
   display: flex;
   justify-content: space-evenly;
   color: white;
-  font-size: 1.5em;
+  font-size: 1.8em;
 } 
 }

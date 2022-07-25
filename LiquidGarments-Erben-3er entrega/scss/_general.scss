@@ -20,6 +20,7 @@ font-family: 'Bebas Neue', cursive;
 }
 .parrafo-contacto{
 	font-size: 2em;
+	text-align: center
 }
 
 .principal__articulo {
@@ -36,51 +37,74 @@ font-family: 'Bebas Neue', cursive;
 	margin: 1em;
 	
 }
-/*grid CONTACTOS*/
-fieldset{
-	display: grid;
-}
-.texto-mediano{
+/*contactos*/
+.contacto{
 
-	font-size:1.5em ;
-}
-.texto-pequeño{
-	font-size: 1.1em;
-}
-.contenedor{
-display: grid;
-justify-content: center;
-margin: 1em;
-grid-template-columns:25% 25% 25% 25%   ;
-grid-template-rows:  auto auto auto  ;
-grid-template-areas: "titulo" 
-                     "datos tipo mensaje enviar"                     
-                     "mapa";
-                     
-}
-.titulo-contacto{
-	grid-area: titulo;
-}
-.contacto-datos{
-	grid-area: datos;
-}
-.contacto-tipo{ 
+	display:flex; 
+   
 
-	grid-area: tipo ;
 }
-.contacto-mensaje{
-	grid-area: mensaje;
-}
-.contacto-enviar{
 
-	grid-area: enviar ;
+
+.form-contacto{
+	text-align: center;
+display:inline-block;
+border: solid rgba(0, 23, 255, 1.0) 0.2em;
+padding: 1em
+}
+.centrado{
+	text-align: center
+}
+.mapa{
+text-align: center
 }
 .contacto-mapa{
-	grid-area: mapa;
+	display: flex;
+	justify-content: center;
 }
 
+.texto-mediano{
+
+	font-size:1.8em ;
+}
+.texto-pequeño{
+	font-size: 1.5em;
+}
 
 .transformacion-index:hover{
+	
 	transform: skew(5deg,2deg);
 }
 
+//Novedades grid
+
+.nov-contenedor{
+	display:grid;
+	grid-template-areas:"novedades novedades novedades"
+	"rusty quicksilver billabong"; 
+
+	grid-template-columns:auto auto auto ;
+	grid-template-rows: auto auto  ;
+justify-content: center;
+ 
+}
+
+
+.nov{
+grid-area:novedades;
+margin:2em
+}
+.rusty{
+grid-area:rusty;
+text-align: center
+
+
+}
+.quick{
+grid-area:quicksilver;
+text-align: center
+}
+.billa{
+grid-area:billabong;
+text-align: center
+}
