@@ -841,3 +841,30 @@ margin-left: 0.3em;
 .pie{
   margin-top: 20em;
 }
+
+@media screen and (max-width: 375px){
+.fb{
+  background: white;
+  display: inline-block;
+  width: 25px;
+}
+.pie__redsocial{
+  display: flex;
+
+  justify-content:space-evenly ;
+  margin: 0.2em;
+  width: 25px;
+  height: 25px;
+  
+}
+
+.pie__titulo{
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+
+  font-size:1.2em;
+
+  order:3 ;
+}
+}
