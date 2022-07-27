@@ -97,13 +97,17 @@ body {
   text-align: center;
   display: inline-block;
   border: solid #0017ff 0.2em;
-  padding: 1em; }
+  padding: 1em;
+width: 100%;
+   }
+
 
 .centrado {
   text-align: center; }
 
 .mapa {
-  text-align: center; }
+  text-align: center;
+   }
 
 .contacto-mapa {
   display: flex;
